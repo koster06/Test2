@@ -8,9 +8,9 @@
 fun main() {
 
     val sum = {x:Int, y:Int -> x + y }
-    doOperation(3, 4, sum)                      // 7
-    doOperation(3, 4, {a:Int, b: Int -> a * b}) // 12
-
+    doOperation(3, 4, sum)
+    doOperation(3, 4, {a:Int, b: Int -> a * b})
+    containsIn(collection)
 }
 fun doOperation(x: Int, y: Int, op: (Int, Int) ->Int){
 
@@ -18,7 +18,11 @@ fun doOperation(x: Int, y: Int, op: (Int, Int) ->Int){
     println(result)
 }
 
-//fun containsIn(collection: Collection): Boolean = collection.any { TODO() }
-//fun any():Boolean {
-//TODO()
-//}
+    var collection = listOf<String>("Cat","Dog","Snake")
+
+fun containsIn(collection: List<String>): Boolean = collection.any {}
+
+fun any(p:Int,converter: ):Boolean {
+
+    return true
+}
